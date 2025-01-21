@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { Copy, School, BookOpen, Users, Calendar,Mail  } from 'lucide-react';
+import { 
+  Copy, School, BookOpen, Users, Calendar, Mail, 
+  Smartphone, Computer, Globe, Cloud, Shield, 
+  Laptop, TabletSmartphone, Wifi, Download, 
+  Clock, Settings, Bell
+} from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import AiFeatureSection from './AiFeatureSection ';
 
@@ -45,8 +50,10 @@ const App = () => {
             <div className="flex items-center space-x-8">
               <School className="h-8 w-8 text-purple-600" />
               <div className="hidden md:flex space-x-8">
-
-            
+                <a href="#" className="text-purple-600 hover:text-purple-800">Home</a>
+                <a href="#" className="text-gray-600 hover:text-purple-600">About</a>
+                <a href="#" className="text-gray-600 hover:text-purple-600">Features</a>
+                <a href="#" className="text-gray-600 hover:text-purple-600">Contact</a>
               </div>
             </div>
             <button
@@ -67,7 +74,7 @@ const App = () => {
               School Management System
             </h1>
             <p className="text-lg text-gray-600">
-              Streamline your educational institution's operations with our comprehensive school management solution.
+              Access your institution's management system anywhere, anytime through our multi-platform solution. Available on web, mobile, and desktop.
             </p>
             <div className="flex space-x-4">
               <button
@@ -76,11 +83,16 @@ const App = () => {
               >
                 Try Demo
               </button>
-              <button className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-lg hover:bg-purple-50 transition-all duration-300">
-                Learn More
-              </button>
+              <button
+  className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-lg hover:bg-purple-50 transition-all duration-300"
+  onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+>
+  Contact
+</button>
             </div>
           </div>
+
+          {/* Core Features Grid */}
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <BookOpen className="h-8 w-8 text-purple-600 mb-4" />
@@ -108,7 +120,39 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+
+        {/* Platform Access Section */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-purple-900 text-center mb-12">Access Anywhere, Anytime</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <Globe className="h-8 w-8 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Web Portal</h3>
+              <p className="text-gray-600">Access anywhere through our responsive web interface.</p>
+              <p className="text-sm text-purple-600 mt-4">Cross-browser compatible</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <Smartphone className="h-8 w-8 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Mobile App</h3>
+              <p className="text-gray-600">iOS and Android apps for on-the-go access.</p>
+              <p className="text-sm text-purple-600 mt-4">Real-time notifications</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <Computer className="h-8 w-8 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Desktop Software</h3>
+              <p className="text-gray-600">Windows & Mac applications for better performance.</p>
+              <p className="text-sm text-purple-600 mt-4">Offline capabilities</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <TabletSmartphone className="h-8 w-8 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Cross-Platform</h3>
+              <p className="text-gray-600">Seamless sync across all your devices.</p>
+              <p className="text-sm text-purple-600 mt-4">Real-time updates</p>
+            </div>
+          </div>
+        </div>
+
 
       {/* Login Modal */}
       {showModal && (
@@ -161,15 +205,15 @@ const App = () => {
 )}
  <AiFeatureSection />
 
-  <footer className="bg-gray-100 py-8 mt-auto">
+  <footer className="bg-grey-100 py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-l font-serif">
               Developed by Khushveer Malviya. Contact: +91-8058209225
             </p>
             <a
               href="mailto:khushveer@example.com"
-              className="flex items-center text-purple-600 hover:text-purple-800 text-sm"
+              className="flex items-center text-purple-600 font-serif hover:text-purple-800 text-l"
             >
               <Mail className="h-4 w-4 mr-2" />
             khushveermalviya26@gmail.com
