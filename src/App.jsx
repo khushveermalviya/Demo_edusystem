@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Copy, School, BookOpen, Users, Calendar,Mail  } from 'lucide-react';
 import { toast } from 'react-hot-toast';
+import AiFeatureSection from './AiFeatureSection ';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +19,7 @@ const App = () => {
       .then(() => {
         toast.success('Credentials copied!');
         setTimeout(() => {
-          window.location.href = '/sms-portal';
+          window.location.href = 'https://student.edusystem.tech';
         }, 1500);
       })
       .catch(() => toast.error('Failed to copy'));
@@ -44,10 +45,8 @@ const App = () => {
             <div className="flex items-center space-x-8">
               <School className="h-8 w-8 text-purple-600" />
               <div className="hidden md:flex space-x-8">
-                <a href="#" className="text-purple-600 hover:text-purple-800">Home</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">About</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Features</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Contact</a>
+
+            
               </div>
             </div>
             <button
@@ -160,6 +159,8 @@ const App = () => {
   </div>
 </div>
 )}
+ <AiFeatureSection />
+
   <footer className="bg-gray-100 py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
