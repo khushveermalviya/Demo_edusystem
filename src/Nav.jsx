@@ -10,12 +10,8 @@ export default function Nav() {
           School MS
         </Link>
         <div className="flex space-x-4">
-          <Link to="/" className="text-gray-600 hover:text-purple-600">
-            Home
-          </Link>
-          <Link to="/contact" className="text-gray-600 hover:text-purple-600">
-            Contact
-          </Link>
+         
+        
         </div>
       </div>
     </div>

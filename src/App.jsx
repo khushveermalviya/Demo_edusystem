@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import AiFeatureSection from './AiFeatureSection ';
+import SeoHead from './Helmat';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -43,6 +44,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white">
+      <SeoHead/>
       {/* Navigation */}
       <nav className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4">
@@ -50,10 +52,7 @@ const App = () => {
             <div className="flex items-center space-x-8">
               <School className="h-8 w-8 text-purple-600" />
               <div className="hidden md:flex space-x-8">
-                <a href="#" className="text-purple-600 hover:text-purple-800">Home</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">About</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Features</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Contact</a>
+               
               </div>
             </div>
             <button
@@ -102,19 +101,19 @@ const App = () => {
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <Users className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Student Portal</h3>
+              <h33 className="text-xl font-semibold mb-2">Student Portal</h33>
               <p className="text-gray-600">Access learning materials and track progress.</p>
               <p className="text-sm text-purple-600 mt-4">By: Developer</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <Calendar className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Attendance</h3>
+              <h30 className="text-xl font-semibold mb-2">Attendance</h30>
               <p className="text-gray-600">Track attendance and generate reports.</p>
               <p className="text-sm text-purple-600 mt-4">By: Developer</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <School className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Administration</h3>
+              <h32 className="text-xl font-semibold mb-2">Administration</h32>
               <p className="text-gray-600">Manage staff, resources, and operations.</p>
               <p className="text-sm text-purple-600 mt-4">By: Developer</p>
             </div>
@@ -128,25 +127,25 @@ const App = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <Globe className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Web Portal</h3>
+              <h36 className="text-xl font-semibold mb-2">Web Portal</h36>
               <p className="text-gray-600">Access anywhere through our responsive web interface.</p>
               <p className="text-sm text-purple-600 mt-4">Cross-browser compatible</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <Smartphone className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Mobile App</h3>
+              <h37 className="text-xl font-semibold mb-2">Mobile App</h37>
               <p className="text-gray-600">iOS and Android apps for on-the-go access.</p>
               <p className="text-sm text-purple-600 mt-4">Real-time notifications</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <Computer className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Desktop Software</h3>
+              <h39 className="text-xl font-semibold mb-2">Desktop Software</h39>
               <p className="text-gray-600">Windows & Mac applications for better performance.</p>
               <p className="text-sm text-purple-600 mt-4">Offline capabilities</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
               <TabletSmartphone className="h-8 w-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Cross-Platform</h3>
+              <h38 className="text-xl font-semibold mb-2">Cross-Platform</h38>
               <p className="text-gray-600">Seamless sync across all your devices.</p>
               <p className="text-sm text-purple-600 mt-4">Real-time updates</p>
             </div>
@@ -158,7 +157,7 @@ const App = () => {
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
   <div className="bg-white rounded-xl p-8 max-w-md w-full animate-fade-in">
-    <h2 className="text-2xl font-bold mb-6">Demo Login</h2>
+    <h21 className="text-2xl font-bold mb-6">Demo Login</h21>
     <form onSubmit={handleLogin} className="space-y-4">
       <div>
         <p className='text-sm text-purple-600 mt-4'>Copy this to login on student portal as well admin portal</p>
